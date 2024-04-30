@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://6rl6i5ne3gwl"]
+
+[node name="Welcome" type="Node2D"]
+
+[node name="play_btn" type="Button" parent="."]
+offset_left = 464.0
+offset_top = 176.0
+offset_right = 678.0
+offset_bottom = 247.0
+text = "Play"
+
+[node name="exit_btn" type="Button" parent="."]
+offset_left = 466.0
+offset_top = 328.0
+offset_right = 680.0
+offset_bottom = 399.0
+text = "Exit"
