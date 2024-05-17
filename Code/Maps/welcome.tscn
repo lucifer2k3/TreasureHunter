@@ -3,15 +3,15 @@
 [node name="Welcome" type="Node2D"]
 
 [node name="play_btn" type="Button" parent="."]
-offset_left = 464.0
-offset_top = 176.0
-offset_right = 678.0
-offset_bottom = 247.0
+offset_left = 466.0
+offset_top = 214.0
+offset_right = 680.0
+offset_bottom = 285.0
 text = "Play"
 
 [node name="exit_btn" type="Button" parent="."]
-offset_left = 466.0
-offset_top = 328.0
-offset_right = 680.0
-offset_bottom = 399.0
+offset_left = 468.0
+offset_top = 366.0
+offset_right = 682.0
+offset_bottom = 437.0
 text = "Exit"
