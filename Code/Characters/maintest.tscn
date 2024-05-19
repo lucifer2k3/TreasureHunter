@@ -1,0 +1,45 @@
+[gd_scene load_steps=8 format=3 uid="uid://dca3sepaasqfv"]
+
+[ext_resource type="Script" path="res://Code/Characters/maintest.gd" id="1_ixmjb"]
+[ext_resource type="Texture2D" uid="uid://dk4u2hhel2kv4" path="res://Assets/Characters/PlayerCharacter/idle/character1.png" id="1_jgfxt"]
+[ext_resource type="Texture2D" uid="uid://1h2vyr3idwld" path="res://Assets/Characters/PlayerCharacter/idle/character2.png" id="2_lq7pv"]
+[ext_resource type="Texture2D" uid="uid://d0j17ohy35kev" path="res://Assets/Characters/PlayerCharacter/idle/character3.png" id="3_sybfe"]
+[ext_resource type="Texture2D" uid="uid://bq8hw5bjrknpo" path="res://Assets/Characters/PlayerCharacter/idle/character4.png" id="4_yinyn"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3imuk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3ohx4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_jgfxt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_lq7pv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_sybfe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_yinyn")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="maintest" type="CharacterBody2D"]
+script = ExtResource("1_ixmjb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1.8, 1.8)
+shape = SubResource("CapsuleShape2D_3imuk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_3ohx4")
+animation = &"idle"
+frame_progress = 0.241364
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2.7, 2.7)
