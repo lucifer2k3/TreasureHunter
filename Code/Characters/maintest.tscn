@@ -6,7 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://d0j17ohy35kev" path="res://Assets/Characters/PlayerCharacter/idle/character3.png" id="3_sybfe"]
 [ext_resource type="Texture2D" uid="uid://bq8hw5bjrknpo" path="res://Assets/Characters/PlayerCharacter/idle/character4.png" id="4_yinyn"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3imuk"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ceym4"]
+height = 32.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3ohx4"]
 animations = [{
@@ -29,17 +30,17 @@ animations = [{
 }]
 
 [node name="maintest" type="CharacterBody2D"]
+scale = Vector2(0.7, 0.7)
 script = ExtResource("1_ixmjb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-scale = Vector2(1.8, 1.8)
-shape = SubResource("CapsuleShape2D_3imuk")
+scale = Vector2(3, 3)
+shape = SubResource("CapsuleShape2D_ceym4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_3ohx4")
 animation = &"idle"
-frame_progress = 0.241364
+frame_progress = 0.614041
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2.7, 2.7)
+zoom = Vector2(2, 2)
