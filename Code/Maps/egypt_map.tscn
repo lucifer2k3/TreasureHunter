@@ -342,16 +342,16 @@ script = ExtResource("4_dw1os")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
-offset_left = 5.0
-offset_top = 2.0
-offset_right = 45.0
-offset_bottom = 42.0
+offset_left = 1032.0
+offset_top = 10.0
+offset_right = 1072.0
+offset_bottom = 50.0
 texture = ExtResource("5_u7oae")
 
 [node name="Label" type="Label" parent="CanvasLayer"]
 unique_name_in_owner = true
-offset_left = 44.0
-offset_top = 11.0
-offset_right = 111.0
-offset_bottom = 34.0
+offset_left = 1071.0
+offset_top = 19.0
+offset_right = 1138.0
+offset_bottom = 42.0
 text = "0"
