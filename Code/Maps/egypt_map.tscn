@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://cvrycjake8mtd"]
+[gd_scene load_steps=8 format=3 uid="uid://cvrycjake8mtd"]
 
 [ext_resource type="PackedScene" uid="uid://ctnnf0u7eb1wo" path="res://Code/Characters/mainchar.tscn" id="2_2ptua"]
 [ext_resource type="PackedScene" uid="uid://bn8jlp30vec61" path="res://Assets/Items/cherries.tscn" id="3_22kpi"]
 [ext_resource type="Texture2D" uid="uid://lvrcjlt51pel" path="res://Assets/Maps/brick - Copy.png" id="3_318c2"]
 [ext_resource type="Script" path="res://Code/Maps/Game Manager.gd" id="4_dw1os"]
+[ext_resource type="Texture2D" uid="uid://bchbbe71nqkuo" path="res://Assets/Items/Jump (32x32).png" id="5_u7oae"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xal11"]
 texture = ExtResource("3_318c2")
@@ -313,12 +314,6 @@ position = Vector2(357, -276)
 
 [node name="Cherries" type="Node" parent="."]
 
-[node name="Cherries" parent="Cherries" instance=ExtResource("3_22kpi")]
-position = Vector2(738, -283)
-
-[node name="Cherries" parent="Cherries/Cherries" instance=ExtResource("3_22kpi")]
-position = Vector2(1791, 48)
-
 [node name="Cherries2" parent="Cherries" instance=ExtResource("3_22kpi")]
 position = Vector2(524, -174)
 
@@ -343,3 +338,20 @@ position = Vector2(2357, -236)
 [node name="Game Manager" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("4_dw1os")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+offset_left = 5.0
+offset_top = 2.0
+offset_right = 45.0
+offset_bottom = 42.0
+texture = ExtResource("5_u7oae")
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+unique_name_in_owner = true
+offset_left = 44.0
+offset_top = 11.0
+offset_right = 111.0
+offset_bottom = 34.0
+text = "0"
