@@ -12,8 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://bn1s40wcsj4h8" path="res://Assets/Characters/PlayerCharacter/jump/frame0008.png" id="13_xsc38"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hcyrr"]
-radius = 16.0
-height = 60.0
+radius = 9.0
+height = 64.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3la2g"]
 animations = [{
@@ -73,6 +73,7 @@ animations = [{
 script = ExtResource("1_6hqek")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, -2)
 shape = SubResource("CapsuleShape2D_hcyrr")
 
 [node name="Container" type="Node2D" parent="."]
@@ -82,8 +83,7 @@ position = Vector2(-2, -5.5)
 scale = Vector2(0.55, 0.55)
 sprite_frames = SubResource("SpriteFrames_3la2g")
 animation = &"run"
-frame_progress = 0.0142758
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(43, -20)
-zoom = Vector2(2.8, 2.8)
+zoom = Vector2(2, 2)
