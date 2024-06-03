@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://ctnnf0u7eb1wo"]
+[gd_scene load_steps=14 format=3 uid="uid://ctnnf0u7eb1wo"]
 
 [ext_resource type="Script" path="res://Code/Characters/mainchar.gd" id="1_6hqek"]
 [ext_resource type="Texture2D" uid="uid://bl0q14mlwv2rh" path="res://Assets/Characters/PlayerCharacter/idle/character-idle1.png" id="2_g7amb"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://wb34xballs6s" path="res://Assets/Characters/PlayerCharacter/jump/frame0004.png" id="9_ad3id"]
 [ext_resource type="Texture2D" uid="uid://bui3u084ke7ew" path="res://Assets/Characters/PlayerCharacter/jump/frame0005.png" id="10_8hkw0"]
 [ext_resource type="Texture2D" uid="uid://cj46nmdq1b1ao" path="res://Assets/Characters/PlayerCharacter/jump/frame0006.png" id="11_gkgo4"]
+[ext_resource type="Script" path="res://Code/Characters/Character health.gd" id="11_rmc0g"]
 [ext_resource type="Texture2D" uid="uid://dar0ws7f2n2mx" path="res://Assets/Characters/PlayerCharacter/jump/frame0007.png" id="12_gwyor"]
 [ext_resource type="Texture2D" uid="uid://bn1s40wcsj4h8" path="res://Assets/Characters/PlayerCharacter/jump/frame0008.png" id="13_xsc38"]
 
@@ -70,7 +71,6 @@ animations = [{
 }]
 
 [node name="mainchar" type="CharacterBody2D"]
-scale = Vector2(0.7, 0.7)
 script = ExtResource("1_6hqek")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -88,3 +88,7 @@ animation = &"run"
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(43, -20)
 zoom = Vector2(1.5, 1.5)
+
+[node name="Character health" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("11_rmc0g")

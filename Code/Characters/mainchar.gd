@@ -1,14 +1,25 @@
 extends CharacterBody2D
 
-
+class_name mainchar
 const SPEED = 200.0
-const JUMP_VELOCITY = -350.0
+const JUMP_VELOCITY = -400.0
+
+
+var health=10
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var animation = get_node("Container/AnimatedSprite2D")
 @onready var container = get_node("Container")
 
+
+func damaged(damage):
+	if (health>0):
+		health-=damage
+		print(health)
+	else:
+		health=0
+		print("dead")
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
