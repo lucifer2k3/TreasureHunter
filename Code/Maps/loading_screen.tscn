@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://brxqx6lshwbgi"]
+
+[ext_resource type="Script" path="res://Code/Maps/loading_screen.gd" id="1_akb7j"]
+
+[node name="LoadingScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_akb7j")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_left = 182.0
+offset_top = 268.0
+offset_right = 993.0
+offset_bottom = 372.0
