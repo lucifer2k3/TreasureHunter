@@ -71,7 +71,6 @@ animations = [{
 }]
 
 [node name="mainchar" type="CharacterBody2D"]
-scale = Vector2(0.7, 0.7)
 script = ExtResource("1_6hqek")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -88,7 +87,7 @@ animation = &"run"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(43, -20)
-zoom = Vector2(2, 2)
+zoom = Vector2(1.5, 1.5)
 
 [node name="Character health" type="Node" parent="."]
 unique_name_in_owner = true

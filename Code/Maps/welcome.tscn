@@ -8,6 +8,7 @@ anchors_preset = 0
 script = ExtResource("1_ndeft")
 
 [node name="play_btn" type="Button" parent="."]
+layout_mode = 0
 offset_left = 466.0
 offset_top = 214.0
 offset_right = 680.0
@@ -15,6 +16,7 @@ offset_bottom = 285.0
 text = "Play"
 
 [node name="exit_btn" type="Button" parent="."]
+layout_mode = 0
 offset_left = 468.0
 offset_top = 366.0
 offset_right = 682.0

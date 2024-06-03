@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 class_name mainchar
 const SPEED = 200.0
-const JUMP_VELOCITY = -350.0
+const JUMP_VELOCITY = -400.0
 
 
 var health=10
