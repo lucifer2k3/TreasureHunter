@@ -1,6 +1,6 @@
 extends Control
 
-const target_scene_path = "res://Code/Maps/PyramidMap.tscn"
+const target_scene_path = "res://Code/Maps/egypt_map.tscn"
 
 var loading_status : int
 var progress : Array[float]
