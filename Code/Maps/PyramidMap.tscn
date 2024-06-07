@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bq1iorrf0jmg2"]
+[gd_scene load_steps=5 format=3 uid="uid://bsu5lwb5oprle"]
 
 [ext_resource type="Texture2D" uid="uid://lvrcjlt51pel" path="res://Assets/Maps/brick - Copy.png" id="1_ajcde"]
 [ext_resource type="PackedScene" uid="uid://ctnnf0u7eb1wo" path="res://Code/Characters/mainchar.tscn" id="2_4fkr0"]
