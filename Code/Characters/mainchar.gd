@@ -4,11 +4,8 @@ class_name mainchar
 const SPEED = 200.0
 const JUMP_VELOCITY = -400.0
 
-signal healthChanged
-@export var maxHealth: int =100
-@onready var currentHealth: int = maxHealth
 
-
+var health=10
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -17,14 +14,12 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 
 func damaged(damage):
-	currentHealth-=damage	
-	print(currentHealth)
-	if (currentHealth<=0):
-		#currentHealth=maxHealth
-		dead()
-	healthChanged.emit()
-		
-		
+	if (health>0):
+		health-=damage
+		print(health)
+	else:
+		health=0
+		print("dead")
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
@@ -50,7 +45,3 @@ func _physics_process(delta):
 	else:
 		animation.play("idle")
 	move_and_slide()
-func dead():
-	print(currentHealth)
-	print("dead")
-	#khoa di chuyen

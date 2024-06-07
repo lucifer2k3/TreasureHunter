@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://6rl6i5ne3gwl"]
+[gd_scene load_steps=3 format=3 uid="uid://6rl6i5ne3gwl"]
 
 [ext_resource type="Script" path="res://Code/Maps/welcome.gd" id="1_ndeft"]
+[ext_resource type="AudioStream" uid="uid://cgtqbxw7sj1gn" path="res://Code/Maps/wowowowowowowow-103214.mp3" id="2_73l1v"]
 
 [node name="Welcome" type="Control"]
 layout_mode = 3
@@ -22,5 +23,8 @@ offset_top = 366.0
 offset_right = 682.0
 offset_bottom = 437.0
 text = "Exit"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_73l1v")
 
 [connection signal="pressed" from="play_btn" to="." method="_on_play_btn_pressed"]
