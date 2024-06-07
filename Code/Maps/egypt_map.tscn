@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cvrycjake8mtd"]
+[gd_scene load_steps=10 format=3 uid="uid://cvrycjake8mtd"]
 
 [ext_resource type="PackedScene" uid="uid://ctnnf0u7eb1wo" path="res://Code/Characters/mainchar.tscn" id="2_2ptua"]
 [ext_resource type="PackedScene" uid="uid://bn8jlp30vec61" path="res://Assets/Items/cherries.tscn" id="3_22kpi"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://Code/Maps/Game Manager.gd" id="4_dw1os"]
 [ext_resource type="Texture2D" uid="uid://bchbbe71nqkuo" path="res://Assets/Items/Jump (32x32).png" id="5_u7oae"]
 [ext_resource type="PackedScene" uid="uid://ljp2t0c23sia" path="res://Code/Bot/Map1/Monster1.tscn" id="6_2uavc"]
+[ext_resource type="Script" path="res://Code/UI/HealthBar.gd" id="6_iplps"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xal11"]
 texture = ExtResource("3_318c2")
@@ -357,6 +358,14 @@ offset_top = 19.0
 offset_right = 1138.0
 offset_bottom = 42.0
 text = "0"
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
+offset_left = 63.0
+offset_top = 28.0
+offset_right = 421.0
+offset_bottom = 55.0
+value = 100.0
+script = ExtResource("6_iplps")
 
 [node name="Quái" type="Node" parent="."]
 
