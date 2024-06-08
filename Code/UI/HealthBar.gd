@@ -1,8 +1,9 @@
 extends ProgressBar
 
-@onready var player = %mainchar
+var player
 func _ready():
-	print(player.maxHealth)
+	player = get_node("/root/EgyptMap/mainchar")
+	print(player)
 	player.healthChanged.connect(update)
 	update()
 
