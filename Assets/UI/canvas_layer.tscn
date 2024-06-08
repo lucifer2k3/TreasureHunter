@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccpl5wtp5ig8c"]
+
+[ext_resource type="Texture2D" uid="uid://bchbbe71nqkuo" path="res://Assets/Items/Jump (32x32).png" id="1_w6dqe"]
+[ext_resource type="Script" path="res://Code/UI/HealthBar.gd" id="2_wsyha"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1032.0
+offset_top = 10.0
+offset_right = 1072.0
+offset_bottom = 50.0
+texture = ExtResource("1_w6dqe")
+
+[node name="Label" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = 1071.0
+offset_top = 19.0
+offset_right = 1138.0
+offset_bottom = 42.0
+text = "0"
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = 63.0
+offset_top = 28.0
+offset_right = 421.0
+offset_bottom = 55.0
+value = 100.0
+script = ExtResource("2_wsyha")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 1020.0
+offset_top = 504.0
+offset_right = 1034.0
+offset_bottom = 518.0
+scale = Vector2(5.34225, 5.34225)

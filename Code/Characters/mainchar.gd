@@ -38,7 +38,7 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
-	if not is_on_floor():
+	if not velocity.y == 0:
 		animation.play("jump")
 	elif direction == 1 or direction == -1:
 		animation.play("run")
