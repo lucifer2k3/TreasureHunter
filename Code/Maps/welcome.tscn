@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://6rl6i5ne3gwl"]
 
 [ext_resource type="Script" path="res://Code/Maps/welcome.gd" id="1_ndeft"]
-[ext_resource type="AudioStream" path="res://Code/Maps/wowowowowowowow-103214.mp3" id="2_73l1v"]
+[ext_resource type="AudioStream" uid="uid://cgtqbxw7sj1gn" path="res://Code/Maps/wowowowowowowow-103214.mp3" id="2_73l1v"]
 
 [node name="Welcome" type="Control"]
 layout_mode = 3
